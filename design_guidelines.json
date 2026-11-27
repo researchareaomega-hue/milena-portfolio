@@ -1,0 +1,163 @@
+{
+  "theme": "dark",
+  "archetype": "ARCHETYPE 5: LUXURY (Premium, Depth, Mystery) meets High-End Executive Swiss Precision",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#0B0C10",
+        "on_bg": "#F3F4F6",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "link": "#E5E7EB",
+          "accent": "#C0C7D0",
+          "border": "#1F242D",
+          "subtle": "#6B7280"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#12151B",
+        "on_bg": "#F9FAFB",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "border": "#242B35",
+          "badge_bg": "#1A1F27",
+          "badge_text": "#E5E7EB",
+          "badge_border": "#374151"
+        }
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#E5E7EB",
+        "on_bg": "#0B0C10",
+        "on_bg_muted": "#374151",
+        "roles": {
+          "accent": "#111827"
+        }
+      },
+      {
+        "name": "terminal_inbox",
+        "kind": "solid",
+        "bg": "#0D1117",
+        "on_bg": "#E6EDF3",
+        "on_bg_muted": "#8B949E",
+        "roles": {
+          "success": "#3FB950",
+          "error": "#F85149",
+          "border": "#30363D",
+          "terminal_header": "#161B22"
+        }
+      },
+      {
+        "name": "header_glass",
+        "kind": "glass",
+        "contrast_against": "#0B0C10",
+        "guarantee": "backdrop-blur-xl bg-[#0B0C10]/80 border-b border-[#1F242D]",
+        "on_bg": "#F9FAFB",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "active_link": "#FFFFFF",
+          "hover_link": "#E5E7EB"
+        }
+      }
+    ],
+    "accent": "#E5E7EB",
+    "on_accent": "#0B0C10",
+    "status": {
+      "success": "#34D399",
+      "warning": "#FBBF24",
+      "error": "#F87171",
+      "confidential_tag": "#94A3B8"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Playfair Display Variable', serif",
+      "sans": "'Plus Jakarta Sans Variable', sans-serif",
+      "mono": "'JetBrains Mono Variable', monospace"
+    },
+    "scale_px": {
+      "display": 60,
+      "h1": 48,
+      "h2": 36,
+      "h3": 24,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headings": "font-heading tracking-tight font-normal lg:font-medium text-slate-100",
+      "subheadings": "font-sans text-lg lg:text-xl text-slate-300 font-light leading-relaxed",
+      "eyebrows": "font-mono uppercase tracking-[0.25em] text-xs text-slate-400",
+      "body": "font-sans text-base text-slate-300 font-normal leading-relaxed",
+      "mono_data": "font-mono text-sm tracking-normal text-slate-300"
+    }
+  },
+  "entry_surfaces": {
+    "/": "editorial executive hero — monogram brandmark + principal positioning left, executive summary & scroll trigger right",
+    "/inbox": "dark cryptographic executive terminal — split auth & encrypted message review command center",
+    "/terms": "clean legal documentation layout — sidebar chapter index left, legal declarations right",
+    "/privacy": "clean legal documentation layout — security & privacy disclosures with governance badges"
+  },
+  "visual_enhancers": {
+    "monogram_wordmark": "Custom SVG/Stylized geometric monogram 'M | VDA' with platinum fine-line borders and precision kerning",
+    "noise_texture": "Subtle 2% noise/grain backdrop on obsidian background to remove flat digital sterility",
+    "grid_accents": "Hairline 1px border grid system (#1F242D) creating institutional structural confidence",
+    "confidential_badging": "Monospace border pill with dot indicator (e.g. 'CONFIDENTIAL // NDA PROTECTED')",
+    "terminal_cursor": "Pulsing terminal blink caret on PIN verification and inbox stream"
+  },
+  "component_paths": {
+    "layout": "/app/frontend/src/components/layout/ExecutiveLayout.tsx",
+    "navbar": "/app/frontend/src/components/layout/Navbar.tsx",
+    "footer": "/app/frontend/src/components/layout/Footer.tsx",
+    "hero": "/app/frontend/src/components/portfolio/HeroSection.tsx",
+    "overview": "/app/frontend/src/components/portfolio/OverviewSection.tsx",
+    "competencies": "/app/frontend/src/components/portfolio/CompetenciesSection.tsx",
+    "operations": "/app/frontend/src/components/portfolio/OperationsSection.tsx",
+    "transactions": "/app/frontend/src/components/portfolio/TransactionsSection.tsx",
+    "contact_form": "/app/frontend/src/components/portfolio/SecureContactForm.tsx",
+    "inbox_terminal": "/app/frontend/src/components/inbox/TerminalInbox.tsx"
+  },
+  "grids_and_layouts": {
+    "container": "max-w-6xl mx-auto px-6 sm:px-8 lg:px-12",
+    "hero_grid": "grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center min-h-[85vh] py-20 lg:py-28",
+    "competencies_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8",
+    "operations_grid": "grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8",
+    "transactions_grid": "grid grid-cols-1 md:grid-cols-2 gap-8",
+    "contact_grid": "grid grid-cols-1 lg:grid-cols-12 gap-12"
+  },
+  "motion": {
+    "engine": "motion/react",
+    "standard_fade_up": {
+      "initial": { "opacity": 0, "y": 24 },
+      "whileInView": { "opacity": 1, "y": 0 },
+      "viewport": { "once": true, "margin": "-80px" },
+      "transition": { "duration": 0.6, "ease": [0.16, 1, 0.3, 1] }
+    },
+    "stagger_container": {
+      "initial": {},
+      "whileInView": { "transition": { "staggerChildren": 0.12 } }
+    },
+    "interactive_hover": "transition-colors duration-200 ease-out"
+  },
+  "accessibility": {
+    "wcag_compliance": "WCAG AA / APCA standard with strict 4.5:1 minimum contrast",
+    "focus_states": "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0C10]",
+    "reduced_motion": "Wrap motion components or respect prefers-reduced-motion using standard Tailwind/CSS rules",
+    "test_ids": "Every button, input, tab, modal, and key card carries a kebab-case data-testid"
+  },
+  "image_urls": [],
+  "instructions_to_main_agent": [
+    "1. Strict Executive Luxury Theme: Dark Obsidian (#0B0C10), Platinum/Silver highlights (#E5E7EB, #F3F4F6), hairline graphite borders (#1F242D).",
+    "2. Strict Typography: Playfair Display for 'Milena' name and major executive headlines; Plus Jakarta Sans for body text; JetBrains Mono for metadata, transaction tags, confidential chips, and terminal readouts.",
+    "3. No stock photos of random people: Visual authority is driven by typography, spacious Swiss grid layout, luxury monogram wordmark, and NDA transaction telemetry cards.",
+    "4. Monogram Wordmark: Render an elegant, high-craft SVG or stylized typographic mark for 'Milena / Vanguard Digital Assets™' at the top left and hero.",
+    "5. Contact Form Flow: Wire the 'Initiate Business Inquiry' form to FastAPI backend (`/api/inquiries`) with field validation. On submission, display an executive encryption / 'Message Dispatched to Secure Internal Inbox' animation and trigger a toast via `sonner`.",
+    "6. Internal Inbox (/inbox): Provide a PIN-gated executive terminal (Default PIN: '2026' or '8899', clearly hintable for reviewers). The terminal displays inquiries, unread badge counter, 'Mark as Reviewed', and 'Archive / Purge' actions.",
+    "7. Legal Pages: Provide `/terms` and `/privacy` with comprehensive Vanguard Digital Assets™ governance and fiduciary policy clauses.",
+    "8. Include standard data-testid attributes on all interactive controls (e.g. data-testid='cta-inquire-button', data-testid='contact-name-input', data-testid='inbox-pin-input', etc.)."
+  ]
+}
